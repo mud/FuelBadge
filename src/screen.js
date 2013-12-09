@@ -10,7 +10,7 @@
     this.width = cols * FuelBadge.Pixel.cellBlock;
     this.height = (rows+2) * FuelBadge.Pixel.cellBlock;
     this.scale = scale || 1;
-    this.$canvas = $('<canvas/>', { id: id });
+    this.$canvas = $('<canvas/>', { id: id, width: this.width, height: this.height });
     this.$canvas[0].width = this.width;
     this.$canvas[0].height = this.height;
     this.pixels = [];
@@ -82,6 +82,8 @@
   Screen.prototype.drawGrid = function() {
     // draw grid
     this.ctx.strokeStyle = "green";
+    this.ctx.save();
+    this.ctx.translate(0.5, 0.5);
     for (var row = 0; row <= this.rows; row++) {
       this.ctx.save();
       this.ctx.beginPath();
@@ -92,6 +94,9 @@
       this.ctx.restore();
       for (var col = 0; col <= this.cols; col++) {
         this.ctx.save();
+        if (col === this.cols) {
+          this.ctx.translate(-0.5, 0);
+        }
         this.ctx.beginPath();
         this.ctx.moveTo(col*FuelBadge.Pixel.cellBlock, 0);
         this.ctx.lineTo(col*FuelBadge.Pixel.cellBlock, row*FuelBadge.Pixel.cellBlock);
@@ -100,6 +105,7 @@
         this.ctx.restore();
       }
     }
+    this.ctx.restore();
   };
 
   Screen.drawLetter = function(screen, letter, offset) {

@@ -105,7 +105,7 @@
         "* *\n"+
         "* *\n"+
         "***\n"
-    }
+    };
   })();
 
   window.FuelBadge.Letters = Letters;
