@@ -2,15 +2,37 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
-    "\/dist\/app.js" : {
+    "\/dist\/fuelbadge.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/dist\/app.js",
+      "inputAbbreviatedPath" : "\/dist\/fuelbadge.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/dist\/app.min.js",
+      "outputAbbreviatedPath" : "\/dist\/fuelbadge.min.js",
+      "fileType" : 64
+    },
+    "\/src\/pixel.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/pixel.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/dist\/pixel.min.js",
+      "fileType" : 64
+    },
+    "\/src\/utils.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/src\/utils.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/dist\/utils.min.js",
       "fileType" : 64
     },
     "\/index.html" : {
@@ -22,31 +44,20 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/src\/utils.js" : {
+    "\/src\/screen.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/src\/utils.js",
+      "inputAbbreviatedPath" : "\/src\/screen.js",
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/dist\/utils.min.js",
-      "fileType" : 64
-    },
-    "\/src\/pixel.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/src\/pixel.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/dist\/pixel.min.js",
+      "outputAbbreviatedPath" : "\/dist\/screen.min.js",
       "fileType" : 64
     },
     "\/src\/letters.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/src\/letters.js",
@@ -55,20 +66,47 @@
       "outputAbbreviatedPath" : "\/dist\/letters.min.js",
       "fileType" : 64
     },
-    "\/src\/screen.js" : {
+    "\/dist\/app.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/src\/screen.js",
-      "outputStyle" : 1,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/dist\/app.js",
+      "outputStyle" : 0,
       "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/dist\/screen.min.js",
+      "outputAbbreviatedPath" : "\/dist\/fuelbadge.js",
       "fileType" : 64
     }
   },
   "manualImportLinks" : [
-
+    {
+      "type" : 1,
+      "position" : 0,
+      "linkedFileAbbreviatedPath" : "\/src\/utils.js",
+      "baseFileAbbreviatedPath" : "\/dist\/app.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 1,
+      "linkedFileAbbreviatedPath" : "\/src\/letters.js",
+      "baseFileAbbreviatedPath" : "\/dist\/app.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 2,
+      "linkedFileAbbreviatedPath" : "\/src\/pixel.js",
+      "baseFileAbbreviatedPath" : "\/dist\/app.js",
+      "followForSyntaxChecking" : 1
+    },
+    {
+      "type" : 1,
+      "position" : 3,
+      "linkedFileAbbreviatedPath" : "\/src\/screen.js",
+      "baseFileAbbreviatedPath" : "\/dist\/app.js",
+      "followForSyntaxChecking" : 1
+    }
   ],
   "projectSettings" : {
     "hamlNoEscapeInAttributes" : 0,

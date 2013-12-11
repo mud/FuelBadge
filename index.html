@@ -22,9 +22,10 @@
     $(function() {
       screen = new FuelBadge.Screen('canvas', 20, 5, 1);
       screen.append($('body'));
+      screen.drawString("FUEL");
       screen.render();
       // draw grid
-      screen.drawGrid();
+      // screen.drawGrid();
       window.screen = screen;
     });
   </script>
