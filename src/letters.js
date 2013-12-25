@@ -1,6 +1,4 @@
 (function(window) {
-  var FuelBadge = window.FuelBadge || {};
-
   var Letters = (function() {
     return {
       getLetter: function(character) {
